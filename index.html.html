@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #6e9cf1, #9dc6f0);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 20px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #6e9cf1;
+}
+
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+h2:after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #6e9cf1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+/* About Section */
+#about img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: auto;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+.skills div {
+    font-size: 1.1rem;
+    margin: 15px 0;
+}
+
+.skills div strong {
+    color: #444;
+}
+
+/* Projects Section */
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projects div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.projects div:hover {
+    transform: translateY(-10px);
+}
+
+.projects img {
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Portfolio Section */
+.portfolio-images {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-images img {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Testimonials Section */
+.testimonials blockquote {
+    font-style: italic;
+    color: #777;
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #6e9cf1;
+}
+
+/* Contact Section */
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #6e9cf1;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #577bcc;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #6e9cf1;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Shantanu Sangale</h1>
+        <p>Data Analyst | Data Engineer</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="D:\Download\PASSPORT_IMAGE.jpg" alt="Your Photo" style="width:150px; border-radius: 50%;">
+        <p>
+            Passionate software engineer with a strong background in deep learning, computer vision, and natural language
+            processing. Skilled in Python, TensorFlow, and various ML libraries. Excellent problem-solving, research, and collaboration
+            abilities. Seeking a challenging role to develop cutting-edge AI solutions.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div><strong>Programming Languages:</strong> HTML, CSS, JavaScript, Python</div>
+            <div><strong>Frameworks & Libraries:</strong> Pandas, MatPlotLib, TensorFlow, PyTorch,OpenCV</div>
+            <div><strong>Tools & Software:</strong> VSCode, Git, AWS</div>
+            <div><strong>Soft Skills:</strong> Problem-solving, Teamwork, Leadership</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div>
+                <h3>Criminal Detection Through face Recognition</h3>
+                <p>Deep Learning Project
+                    • Developed an end-to-end system for image recognition and face identification of a person(criminal)
+                    • Utilized CNN and LBPH algorithm for image feature extraction and Recognition
+                    • Achieved a knowledgefull experience of using the deep learning algorithms</p>
+                <img src="D:\Download\IMG-20240413-WA0028.jpg" alt="Project 1">
+            </div>
+            <div>
+                <h3>Amazon cloud project Resourse Allocation</h3>
+                <p>Amazon Web services
+                    • Gather and deploy resources according to the user specification on amazon web services
+                    • Implemented saas services to the client
+                    • Deployed the API on a cloud platform for easy integration</p>
+                <img src="D:\OLD_FILES\project\Criminal-Identification-System-master\logo.png" alt="Project 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Download my resume: <a href="D:\Download\Shantanu Resume.pdf" download>Download Resume</a></p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+            <blockquote>
+                "Behold, in you is Shiva! And in me is Shakti! And these two are One!"
+                <br>— Swami Vivekananda
+            </blockquote>
+            <blockquote>
+                "Innovative and detail-oriented, highly recommend."
+                <br>— Bill Gates ,Microsoft
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-form">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p> Shantanu Sangale. </p>
+        
+        <p><a href="#top" style="color:white;">Back to Top</a></p>
+    </footer>
+
+</body>
+</html>
